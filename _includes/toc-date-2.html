@@ -21,7 +21,10 @@
 
             {% for collection in site.collections %}
                  <p>{{ collection.label }}</p>
-               <p>{{ collection.output }}</p>
+               <p>{{ collection.directory }}</p>
+            <p>{{ collection.relative_directory }}</p>
+            <p>{{ collection.files }}</p>
+            <p>{{ collection.docs }}</p>
                 {% if collection.output %}
                     {% if collection.label == "posts" %}
                         {% assign reversed_posts = site[collection.label] | reverse %}
