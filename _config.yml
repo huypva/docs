@@ -50,9 +50,6 @@ collections:
   pages:
     output: true
     permalink: /:title:output_ext
-  cats:
-    output: true
-    permalink: /:title
 
 page_width: 800px
 

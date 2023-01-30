@@ -40,7 +40,7 @@
             {% for category in site.categories %}
                 {% capture category_name %}{{ category | first }}{% endcapture %}
                 {% capture category_path %}{{ category_name | downcase | url_escape | strip | replace: ' ', '-' }}{% endcapture %}
-                {% if page.category == category_path %}
+                {% if page.category == category_name %}
                 <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}/{{category_path}}">
                     <a href="{{site.baseurl}}/{{category_path}}">
                         {{ category | first | escape }}
